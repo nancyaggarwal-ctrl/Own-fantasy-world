@@ -1,0 +1,47 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+using namespace std;
+
+class character{
+    public:
+    string arr[5]={"name","age","race","height","attackpower"};
+    
+    character(){
+        cout<<"✨WELCOME TO THE FANTASY WORLD✨ "<<endl;
+        cout<<"enter your character name: ";
+        cin>>arr[0];
+        cout<<"enter age: ";
+        cin>>arr[1];
+        cout<<"enter race: ";
+        cin>>arr[2];
+        cout<<"enter height: ";
+        cin>>arr[3];
+        cout<<endl;
+        int a= stoi(arr[3])*10;
+        arr[4]= to_string(a);
+    }
+
+        void printdetails(){
+        cout<<arr[0]<<endl;
+        cout<<arr[1]<<endl;
+        cout<<arr[2]<<endl;
+        cout<<arr[3]<<" ft"<<endl;
+        cout<<arr[4]<<endl<<endl;
+        
+    }
+    
+};
+
+    
+int main(){
+    character heroes;
+    cout<<"🌈GET READY TO ENTER IN YOU OWN WORLD🦄"<<endl;
+    heroes.printdetails();
+        
+        
+    
+    return 0;   
+    
+}
+
